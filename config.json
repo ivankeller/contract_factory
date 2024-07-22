@@ -1,0 +1,8 @@
+{
+    "EXCEL employees data path": "./input/dataContracts_example.xlsx",
+    "PDF contract template path": "./input/templateContractGRIPNL_example.pdf",
+    "output directory path": "./output/",
+    "format employee specs": {
+        "brut_day": ".2f"
+    }
+}

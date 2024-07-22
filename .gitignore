@@ -1,0 +1,9 @@
+.DS_Store
+.venv/
+.vscode/
+__pycache__/
+input/*
+!input/templateContractGRIPNL_example.pdf
+!input/dataContracts_example.xlsx
+output/
+scratch.ipynb
