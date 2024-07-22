@@ -13,7 +13,6 @@ from reportlab.lib.pagesizes import letter
 
 
 logger = logging.getLogger('the_logger')
-logger.setLevel(logging.DEBUG)
 
 def main(config_path):
 
@@ -24,6 +23,14 @@ def main(config_path):
     excel_file_path = config['EXCEL employees data path']
     template_path = config['PDF contract template path']
     format_employee_specs = config['format employee specs']
+    logging_mode = config['logging_mode']
+
+    if logging_mode == "debug":
+        logger.setLevel(logging.DEBUG)
+    elif logging_mode == "warning":
+        logger.setLevel(logging.WARNING)
+    elif logging_mode == "info":
+        logger.setLevel(logging.INFO)
 
     # Load the employees data from Excel file into a DataFrame
     df_employees = pd.read_excel(excel_file_path)

@@ -23,7 +23,7 @@ Edit the file config.json by specifying the inputs files according to your needs
 
 ### Run
 
-Activate the virtual environment:
+Activate the virtual environment if it's not activated yet:
 ```bash
 source .venv/bin/activate
 ```

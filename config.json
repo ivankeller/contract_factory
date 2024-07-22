@@ -4,5 +4,6 @@
     "output directory path": "./output/",
     "format employee specs": {
         "brut_day": ".2f"
-    }
+    },
+    "logging_mode": "info"
 }
